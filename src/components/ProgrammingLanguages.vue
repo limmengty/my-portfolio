@@ -28,8 +28,8 @@
       />
       <ChartLanguage
         title="C#"
-        :styleBottom="'bg-gradient-to-r from-green-300 to-purple-400'"
-        :styleTop="'w-1/3 bg-gradient-to-r from-slate-500 to-yellow-100'"
+        :styleBottom="'bg-gradient-to-r from-green-300 to-yellow-200'"
+        :styleTop="'w-1/3 bg-gradient-to-r from-blue-400 to-yellow-300'"
       />
       <ChartLanguage
         title="Python"
@@ -38,13 +38,13 @@
       />
       <ChartLanguage
         title="C++"
-        :styleBottom="'bg-gradient-to-r from-green-300 to-purple-400'"
-        :styleTop="'w-1/3 bg-gradient-to-r from-slate-500 to-yellow-100'"
+        :styleBottom="'bg-gradient-to-r from-green-300 to-green-400'"
+        :styleTop="'w-1/3 bg-gradient-to-r from-blue-500 to-yellow-300'"
       />
       <ChartLanguage
         title="SQL"
-        :styleBottom="'bg-gradient-to-r from-green-300 to-purple-400'"
-        :styleTop="'w-1/2 bg-gradient-to-r from-slate-500 to-yellow-100'"
+        :styleBottom="'bg-gradient-to-r from-green-500 to-purple-300'"
+        :styleTop="'w-1/2 bg-gradient-to-r from-yellow-500 to-yellow-100'"
       />
     </BaseProgram>
   </div>

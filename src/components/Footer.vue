@@ -1,7 +1,7 @@
 <template>
   <div
     data-aos="fade-top"
-    class="flex flex-col items-start w-full mb-20"
+    class="flex flex-col items-start w-full my-20"
     id="contact"
   >
     <footer class="bg-transparent w-full">

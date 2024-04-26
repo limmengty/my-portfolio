@@ -18,8 +18,9 @@
 
         <div class="mt-8 flex flex-wrap justify-center gap-4">
           <a
-            class="block dark:text-gray-lightest hover:text-gray-darkest text-center transition-colors w-full rounded border border-gray-dark bg-gray-dark px-12 py-3 text-sm font-medium text-white hover:bg-transparent focus:outline-none focus:ring-2 active:text-opacity-75 sm:w-auto"
-            href="#"
+            class="block hover:text-gray-darkest text-center transition-colors w-full rounded border border-gray-dark dark:bg-gray-light dark:text-gray-darkest dark:hover:text-white dark:hover:bg-transparent dark:border-gray-light bg-gray-dark px-12 py-3 text-sm font-medium text-white hover:bg-transparent focus:outline-none focus:ring-2 active:text-opacity-75 sm:w-auto"
+            href="https://github.com/MengTy199/my-portfolio/blob/main/src/assets/cv.jpg"
+            target="_blank"
           >
             MY CV
           </a>

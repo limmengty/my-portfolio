@@ -1,17 +1,23 @@
 <template>
   <header class="opacity-90 sticky top-0 z-50">
     <div
-      class="mx-auto w-full lg:w-2/3 bg-gray-lightest dark:bg-gray-dark hover:text-gray-dark dark:text-white dark:hover:text-gray-light rounded-2xl px-10 mt-5 mb-5"
+      class="mx-auto w-full lg:w-2/3 bg-gray-lightest dark:bg-gray-dark hover:text-gray-dark dark:text-white dark:hover:text-gray-light rounded-2xl px-10 mt-5 mb-5 py-1"
       :class="{
-        'bg-gray-200 transition-colors dark:shadow-gray-50 drop-shadow-md text-gray-dark dark:bg-gray-600':
+        'bg-gray-200 py-0 transition-all dark:shadow-gray-50 drop-shadow-md text-gray-dark dark:bg-gray-500':
           scrolledNav,
       }"
     >
       <div class="flex h-14 items-center justify-between">
         <div class="items-center md:flex md:items-center md:gap-12">
-          <a class="block text-teal-600 dark:text-teal-300 font-bold" href="#">
+          <a class="block font-bold" href="#">
             <span class="sr-only">Home</span>
-            <a @click="scrollToHome"><h1>LMT</h1></a>
+            <a @click="scrollToHome"
+              ><h1
+                class="text-2xl bg-gradient-to-r from-sky-400 to-blue-500 dark:bg-gradient-to-r dark:from-rose-400 dark:to-orange-300 bg-clip-text font-bold text-transparent md:text-3xl"
+              >
+                LMT
+              </h1></a
+            >
           </a>
         </div>
 
@@ -22,7 +28,7 @@
             class="mt-10 mx-auto w-full rounded-b-2xl absolute top-0 left-0 p-10 -z-50 bg-gray-lightest dark:bg-gray-dark"
             v-show="mobileNav"
           >
-            <ul class="flex flex-col items-center gap-6 text-sm">
+            <ul class="flex flex-col items-center gap-6 text-xl">
               <li @click="closeMobileNav">
                 <a class="transition" @click="scrollToAbout"> About </a>
               </li>
@@ -47,7 +53,7 @@
         </transition>
         <div class="md:flex md:items-center md:gap-12">
           <nav aria-label="Global" class="">
-            <ul class="flex items-center gap-6 text-sm" v-show="!moblie">
+            <ul class="flex items-center gap-6 text-xl" v-show="!moblie">
               <li>
                 <a @click="scrollToAbout" class="transition"> About </a>
               </li>
@@ -76,14 +82,14 @@
             </ul>
           </nav>
         </div>
-        <div class="flex items-center md:hidden">
+        <div class="flex items-center md:hidden text-xl">
           <div class="block sm:hidden float-end">
             <button
-              class="rounded text-gray-600 transition hover:text-gray-600/75 dark:bg-gray-800 dark:text-white dark:hover:text-white/75"
+              class="mr-2 rounded text-gray-600 transition hover:text-gray-600/75 dark:text-white dark:hover:text-white/75"
             >
               <i
                 v-show="moblie"
-                class="fa-solid fa-bars "
+                class="fa-solid fa-bars rotate-360 transition-all"
                 @click="toggleMoblieNav"
                 :class="{
                   'fa-solid fa-xmark rotate-180 transition-all': mobileNav,
@@ -104,10 +110,6 @@ import DarkMode from "@/components/DarkMode.vue";
 export default {
   name: "Navbar",
   components: { DarkMode },
-  // computed: {
-  //   ...mapState(darkModeStore, ['isDark']),
-  // },
-
   created() {
     window.addEventListener("resize", this.checkScreen);
     this.checkScreen();
@@ -125,8 +127,6 @@ export default {
     };
   },
   methods: {
-    // ...mapActions(darkModeStore, ['toggleDark']),
-
     toggleMoblieNav() {
       this.mobileNav = !this.mobileNav;
     },

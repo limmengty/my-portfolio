@@ -29,7 +29,7 @@
       <ChartLanguage
         title="Spring Boot"
         :styleBottom="'bg-gradient-to-tl from-blue-400 to-emerald-400'"
-        :styleTop="'w-1/3 bg-gradient-to-r from-blue-500 to-green-700'"
+        :styleTop="'w-1/2 bg-gradient-to-r from-blue-500 to-green-700'"
       />
     </SkillProgram>
   </div>

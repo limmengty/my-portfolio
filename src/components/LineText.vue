@@ -5,7 +5,7 @@
   >
     <div class="flex flex-col justify center items-center">
       <div
-        class="flex flex-col items-center justify-center h-14 w-14 relative hover:animate-background rounded-full bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-1 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s] dark:shadow-gray-700/25"
+        class="flex flex-col items-center justify-center h-14 w-14 relative hover:animate-background rounded-full bg-gradient-to-r from-blue-light via-blue-600 to-blue-dark p-1 shadow-xl transition hover:bg-[length:400%_400%] hover:shadow-sm hover:[animation-duration:_4s] dark:shadow-gray-700/25"
       >
         <span
           class="block ounded-md bg-yellow-500 h-7 w-7 rounded-full"
