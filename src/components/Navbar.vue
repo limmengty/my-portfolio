@@ -42,7 +42,7 @@
               </li>
 
               <li @click="closeMobileNav">
-                <a v-scroll-to="'#project'" class="transition"> Project </a>
+                <a  @click="scrollToProjectMB" class="transition"> Project </a>
               </li>
 
               <li @click="closeMobileNav">
@@ -53,7 +53,7 @@
         </transition>
         <div class="md:flex md:items-center md:gap-12">
           <nav aria-label="Global" class="">
-            <ul class="flex items-center gap-6 text-xl" v-show="!moblie">
+            <ul class="flex items-center gap-6 md:text-md" v-show="!moblie">
               <li>
                 <a @click="scrollToAbout" class="transition"> About </a>
               </li>
@@ -83,7 +83,7 @@
           </nav>
         </div>
         <div class="flex items-center md:hidden text-xl">
-          <div class="block sm:hidden float-end">
+          <div class="block md:hidden float-end">
             <button
               class="mr-2 rounded text-gray-600 transition hover:text-gray-600/75 dark:text-white dark:hover:text-white/75"
             >
@@ -153,7 +153,7 @@ export default {
 
     scrollToHome() {
       this.$scrollTo("#home", {
-        duration: 400,
+        duration: 300,
         easing: "linner",
         offset: 0,
         force: true,
@@ -161,15 +161,15 @@ export default {
     },
     scrollToAbout() {
       this.$scrollTo("#about", {
-        duration: 400,
+        duration: 300,
         easing: "linner",
-        offset: 0,
-        force: true,
+        offset: -200,
+        // force: true,
       });
     },
     scrollToContact() {
       this.$scrollTo("#contact", {
-        duration: 1000,
+        duration: 300,
         easing: "linear",
         offset: -100,
         force: true,
@@ -177,15 +177,23 @@ export default {
     },
     scrollToProject() {
       this.$scrollTo("#project", {
-        duration: 1000,
+        duration: 300,
         easing: "linear",
         offset: -100,
+        force: true,
+      });
+    },    
+    scrollToProjectMB() {
+      this.$scrollTo("#project", {
+        duration: 300,
+        easing: "linear",
+        offset: -60,
         force: true,
       });
     },
     scrollToEdu() {
       this.$scrollTo("#edu", {
-        duration: 1000,
+        duration: 300,
         easing: "linear",
         offset: -100,
         force: true,

@@ -1,16 +1,18 @@
 <template>
-  <div>
-    <home/>
-    <!-- <DarkMode /> -->
-  </div>
+    <div v-if="isLoading">
+      <loading-page> </loading-page>
+    </div>
+    <div v-else>
+      <home />
+    </div>
 </template>
 
-<script>
-import Home from './views/Home.vue'
-// import DarkMode from './views/DarkMode.vue'
+<script setup>
+import { ref } from "vue";
+import { useImage } from "@vueuse/core";
+import Home from "./views/Home.vue";
+import LoadingPage from "./components/LoadingPage.vue";
+const imageOptions = ref();
 
-  export default{
-  components: { Home },
-
-  }
+const { isLoading } = useImage(imageOptions, { delay: 900 });
 </script>

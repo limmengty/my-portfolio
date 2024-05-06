@@ -5,11 +5,17 @@
     >
       <div class="mx-auto max-w-3xl">
         <h1
+          ref=""
           class="bg-gradient-to-r from-purple-800 via-blue-500 to-green-600 dark:bg-gradient-to-r dark:from-indigo-200 dark:via-red-200 dark:to-yellow-100 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl"
         >
           LIM
 
-          <span ref="el" class="block mt-5 bg-clip-text bg-gradient-to-b from-gray-900 via-purple-900 to-violet-600 dark:bg-gradient-to-r dark:from-red-200 dark:via-red-300 dark:to-yellow-400"> MENG TY </span>
+          <span
+            ref="el"
+            class="block mt-5 bg-clip-text bg-gradient-to-b from-gray-900 via-purple-900 to-violet-600 dark:bg-gradient-to-r dark:from-red-200 dark:via-red-300 dark:to-yellow-400"
+          >
+            MENG TY
+          </span>
         </h1>
 
         <p class="mx-auto mt-4 max-w-xl dark:text-gray-lightest text-2xl">
@@ -33,4 +39,16 @@
 <script setup>
 const title =
   "I'm currently in my third year of the Software Development major at Norton University, focusing on web development.";
+
+import { ref } from "vue";
+import { useAnimate  } from "@vueuse/core";
+
+const el = ref();
+const keyframes = ref([
+  { clipPath: "circle(20% at 0% 30%)" },
+  { clipPath: "circle(20% at 50% 80%)" },
+  { clipPath: "circle(20% at 100% 30%)" },
+]);
+
+useAnimate(el, keyframes,1000);
 </script>
