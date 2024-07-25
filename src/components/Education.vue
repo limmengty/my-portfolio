@@ -5,7 +5,9 @@
       <LineText school="Srey Sonthor Hight School" location="Srey Sonthor " date="2021" />
       <LineText school="Software Development" location="Norton University " date="2021-Present" />
       <LineText school="Java Training" location="Norton University " date="2022-2023" />
-      <LineText school="Web Development" location="Norton University " date="2022-2023" :styleLine="'display: block;'" />
+      <!-- <LineText school="Web Development" location="Norton University " date="2022-2023"  /> -->
+      <LineText school="Full Stack Web Development" location="TFD " date="2023-2024" />
+      <LineText school="Nest JS" location="TFD " date="2023-2024" :styleLine="'display: block;'" />
     </div>
   </div>
 </template>

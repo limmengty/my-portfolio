@@ -21,7 +21,7 @@
           rel="noopener noreferrer"
           class="min-h-96"
         >
-          <div class="rounded-[10px] bg-white dark:bg-gray-900">
+          <div class="rounded-[10px] bg-white dark:bg-gray-900 w-full h-full flex flex-col justify-center items-center">
             <img
               src="../assets/students.png"
               alt="students"
@@ -39,11 +39,72 @@
           rel="noopener noreferrer"
           class="min-h-96"
         >
-          <div class="rounded-[10px] bg-white dark:bg-gray-900">
+          <div class="rounded-[10px] bg-white dark:bg-gray-900 md:w-full md:h-full md:flex md:flex-col md:justify-center md:items-center">
             <img
               src="../assets/reaction-timer.png"
               alt="students"
               class="rounded-[10px] hover:transition-all object-contain md:min-h-96"
+            />
+          </div>
+        </a>
+      </div>
+      <div
+        class="md:min-h-96 h-full md:min-w-96 p-1 hover:-rotate-2 hover:scale-105 hover:animate-background rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 shadow-xl transition hover:bg-[length:100%_100%] hover:shadow-sm hover:[animation-duration:_4s] dark:shadow-gray-700/25"
+      >
+        <a
+          href="https://mt-tw-clone.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="min-h-96 h-full"
+        >
+          <div class="rounded-[10px] bg-white dark:bg-gray-900 w-full h-full flex flex-col justify-center items-center">
+            <img
+              src="../assets/tw-clone.png"
+              alt="school"
+              class="rounded-[10px] hover:transition-all object-contain md:min-h-96 h-full"
+            />
+          </div>
+        </a>
+      </div>      
+      <div
+        class="md:min-h-96 h-full md:min-w-96 p-1 hover:-rotate-2 hover:scale-105 hover:animate-background rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 shadow-xl transition hover:bg-[length:100%_100%] hover:shadow-sm hover:[animation-duration:_4s] dark:shadow-gray-700/25"
+      >
+        <a
+          href="https://ass-online-school.netlify.app/src/pages/homepage/index.html"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="min-h-96 h-full"
+        >
+          <div class="rounded-[10px] bg-white dark:bg-gray-900 w-full h-full flex flex-col justify-center items-center">
+            <img
+              src="../assets/schoolweb.png"
+              alt="school"
+              class="rounded-[10px] hover:transition-all object-contain md:min-h-96 h-full"
+            />
+          </div>
+        </a>
+      </div>
+      <div
+        class="md:min-h-[300px] overflow-hidden md:min-w-96 p-1 hover:-rotate-2 hover:scale-105 hover:animate-background rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 shadow-xl transition hover:bg-[length:100%_100%] hover:shadow-sm hover:[animation-duration:_4s] dark:shadow-gray-700/25"
+      >
+        <a
+          href="https://github.com/limmengty/flutter-minimal-shop"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="min-h-[300px]"
+        >
+          <div
+            class="rounded-[10px] flex flex-row justify-evenly py-2 bg-white dark:bg-gray-900"
+          >
+            <img
+              src="../assets/flutter-ministore.png"
+              alt="students"
+              class="rounded-[10px] hover:transition-all object-cover h-[400px] md:min-h-[300px]"
+            />
+            <img
+              src="../assets/flutter-ministore-dark.png"
+              alt="students"
+              class="rounded-[10px] hover:transition-all object-cover h-[400px] md:min-h-[300px] md:block hidden"
             />
           </div>
         </a>

@@ -44,7 +44,12 @@
       <ChartLanguage
         title="SQL"
         :styleBottom="'bg-gradient-to-r from-green-500 to-purple-300'"
-        :styleTop="'w-1/2 bg-gradient-to-r from-yellow-500 to-yellow-100'"
+        :styleTop="'w-1/2 bg-gradient-to-r from-pink-500 to-yellow-400'"
+      />  
+      <ChartLanguage
+        title="Postgres"
+        :styleBottom="'bg-gradient-to-r from-green-500 to-purple-300'"
+        :styleTop="'w-1/2 bg-gradient-to-r from-pink-500 to-yellow-100'"
       />
     </BaseProgram>
   </div>

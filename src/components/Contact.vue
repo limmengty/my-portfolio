@@ -7,13 +7,33 @@
       Contacts
     </h1>
     <div class="flex flex-col w-full h-60">
-      <div class="flex flex-col items-start text-3xl mt-2 font-semibold">
-        <a href="mailto:limmengti@gmail.com" target="_blank"
-          ><h1 data-aos="fade-right" class="">limmengti@gmail.com</h1></a
+      <div
+        class="flex flex-col w-full md:w-1/2 items-start text-3xl mt-2 font-semibold"
+      >
+        <a href="mailto:limmengti@gmail.com" class="w-full">
+          <div
+            v-if="isSupported"
+            class="w-full flex flex-row justify-between items-center group"
+          >
+            <h1 data-aos="fade-right" class="hover:block transition-all">
+              {{ email }}
+            </h1>
+            <button @click="copy(email)" class="text-[1rem]">
+              <span class="hidden group-hover:block">Copy</span>
+            </button>
+          </div>
+        </a>
+        <div
+          v-if="isSupported"
+          class="w-full flex flex-row justify-between items-center group mt-2"
         >
-        <a href="sms:015607244" 
-          ><h1 data-aos="fade-right" class="mt-5">015607244</h1></a
-        >
+          <h1 data-aos="fade-right" class="hover:block transition-all">
+            {{ tel }}
+          </h1>
+          <button @click="copy(tel)" class="text-[1rem]">
+            <span class="hidden group-hover:block">Copy</span>
+          </button>
+        </div>
         <h1 data-aos="fade-right" class="mt-5">
           Lived in Phnom Penh, Cambodia.
         </h1>
@@ -69,3 +89,12 @@
     </div>
   </div>
 </template>
+
+<script setup>
+import { useClipboard } from "@vueuse/core";
+import { ref } from "vue";
+
+const email = ref("limmengti@gmail.com");
+const tel = ref("015607244");
+const { text, copy, copied, isSupported } = useClipboard({ email });
+</script>
