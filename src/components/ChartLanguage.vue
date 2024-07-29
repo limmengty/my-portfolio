@@ -8,12 +8,12 @@
         class="h-14 rounded-2xl absolute top-0 left-0"
         :class="`${styleTop}`"
       >
-        <div class="absolute top-0 left-0 translate-x-4 translate-y-1/2">
+        <div class="flex flex-col justify-center items-start pl-2 h-full w-full">
           <h1
             data-aos="fade-right"
             data-aos-offset="100"
             data-aos-easing="ease-in-sine"
-            class="font-bold text-lg text-left"
+            class="font-bold xl:text-md md:text-[.8rem] text-md  text-left"
           >
             {{ title }}
           </h1>

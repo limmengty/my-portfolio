@@ -13,7 +13,7 @@
       class="grid grid-cols-1 gap-6 md:gap-10 xl:grid-cols-2 xl:gap-8 my-10 cursor-pointer"
     >
       <div
-        class="md:min-h-96 md:min-w-96 p-1 hover:-rotate-2 hover:scale-105 hover:animate-background rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 shadow-xl transition hover:bg-[length:100%_100%] hover:shadow-sm hover:[animation-duration:_4s] dark:shadow-gray-700/25"
+        class="md:min-h-[200px] md:min-w-96 p-1 hover:-rotate-2 hover:scale-105 hover:animate-background rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 shadow-xl transition hover:bg-[length:100%_100%] hover:shadow-sm hover:[animation-duration:_4s] dark:shadow-gray-700/25"
       >
         <a
           href="https://github.com/MengTy199/laravel-student-management-systems"
@@ -25,13 +25,13 @@
             <img
               src="../assets/students.png"
               alt="students"
-              class="rounded-[10px] hover:transition-all object-contain md:min-h-96"
+              class="rounded-[10px] hover:transition-all object-cover md:min-h-[150px]"
             />
           </div>
         </a>
       </div>
       <div
-        class="md:min-h-96 md:min-w-96 p-1 hover:-rotate-2 hover:scale-105 hover:animate-background rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 shadow-xl transition hover:bg-[length:100%_100%] hover:shadow-sm hover:[animation-duration:_4s] dark:shadow-gray-700/25"
+        class="md:min-h-[200px] md:min-w-96 p-1 hover:-rotate-2 hover:scale-105 hover:animate-background rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 shadow-xl transition hover:bg-[length:100%_100%] hover:shadow-sm hover:[animation-duration:_4s] dark:shadow-gray-700/25"
       >
         <a
           href="https://mt-reaction-timer.netlify.app/"
@@ -43,13 +43,13 @@
             <img
               src="../assets/reaction-timer.png"
               alt="students"
-              class="rounded-[10px] hover:transition-all object-contain md:min-h-96"
+              class="rounded-[10px] hover:transition-all object-cover md:min-h-[150px]"
             />
           </div>
         </a>
       </div>
       <div
-        class="md:min-h-96 h-full md:min-w-96 p-1 hover:-rotate-2 hover:scale-105 hover:animate-background rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 shadow-xl transition hover:bg-[length:100%_100%] hover:shadow-sm hover:[animation-duration:_4s] dark:shadow-gray-700/25"
+        class="md:min-h-[200px] h-full md:min-w-96 p-1 hover:-rotate-2 hover:scale-105 hover:animate-background rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 shadow-xl transition hover:bg-[length:100%_100%] hover:shadow-sm hover:[animation-duration:_4s] dark:shadow-gray-700/25"
       >
         <a
           href="https://mt-tw-clone.netlify.app/"
@@ -61,13 +61,13 @@
             <img
               src="../assets/tw-clone.png"
               alt="school"
-              class="rounded-[10px] hover:transition-all object-contain md:min-h-96 h-full"
+              class="rounded-[10px] hover:transition-all object-cover md:min-h-[150px] h-full"
             />
           </div>
         </a>
       </div>      
       <div
-        class="md:min-h-96 h-full md:min-w-96 p-1 hover:-rotate-2 hover:scale-105 hover:animate-background rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 shadow-xl transition hover:bg-[length:100%_100%] hover:shadow-sm hover:[animation-duration:_4s] dark:shadow-gray-700/25"
+        class="md:min-h-[200px] h-full md:min-w-96 p-1 hover:-rotate-2 hover:scale-105 hover:animate-background rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 shadow-xl transition hover:bg-[length:100%_100%] hover:shadow-sm hover:[animation-duration:_4s] dark:shadow-gray-700/25"
       >
         <a
           href="https://ass-online-school.netlify.app/src/pages/homepage/index.html"
@@ -79,13 +79,13 @@
             <img
               src="../assets/schoolweb.png"
               alt="school"
-              class="rounded-[10px] hover:transition-all object-contain md:min-h-96 h-full"
+              class="rounded-[10px] hover:transition-all object-cover md:min-h-[150px] h-full"
             />
           </div>
         </a>
       </div>
       <div
-        class="md:min-h-[300px] overflow-hidden md:min-w-96 p-1 hover:-rotate-2 hover:scale-105 hover:animate-background rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 shadow-xl transition hover:bg-[length:100%_100%] hover:shadow-sm hover:[animation-duration:_4s] dark:shadow-gray-700/25"
+        class="md:min-h-[200px] overflow-hidden md:min-w-96 p-1 hover:-rotate-2 hover:scale-105 hover:animate-background rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 shadow-xl transition hover:bg-[length:100%_100%] hover:shadow-sm hover:[animation-duration:_4s] dark:shadow-gray-700/25"
       >
         <a
           href="https://github.com/limmengty/flutter-minimal-shop"

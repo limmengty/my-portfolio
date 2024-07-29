@@ -5,7 +5,7 @@
       @click="pushTop()"
       v-show="scrolledNav"
       :class="{ block: scrolledNav }"
-      class="fixed bottom-10 right-5 rounded-xl cursor-pointer bg-second-200 p-5 z-10 text-black bg-white"
+      class="fixed flex flex-col justify-center items-center animate-pulse duration-75 shadow-sm bottom-5 right-4 w-4 h-5 rounded-full cursor-pointer bg-second-200 p-5 z-10 dark:bg-white dark:text-black text-white bg-gray-darkest"
     >
       <i class="fa-solid fa-arrow-up"></i>
     </div>

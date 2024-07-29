@@ -19,7 +19,8 @@
               {{ email }}
             </h1>
             <button @click="copy(email)" class="text-[1rem]">
-              <span class="hidden group-hover:block">Copy</span>
+              <span class="hidden group-hover:block" v-if="copied">Copied</span>
+              <span class="hidden group-hover:block" v-else>Copy</span>
             </button>
           </div>
         </a>
@@ -31,7 +32,8 @@
             {{ tel }}
           </h1>
           <button @click="copy(tel)" class="text-[1rem]">
-            <span class="hidden group-hover:block">Copy</span>
+            <span class="hidden group-hover:block" v-if="copied">Copied</span>
+            <span class="hidden group-hover:block" v-else>Copy</span>
           </button>
         </div>
         <h1 data-aos="fade-right" class="mt-5">
@@ -96,5 +98,5 @@ import { ref } from "vue";
 
 const email = ref("limmengti@gmail.com");
 const tel = ref("015607244");
-const { text, copy, copied, isSupported } = useClipboard({ email });
+const { text, copy, copied, isSupported } = useClipboard({ email, tel});
 </script>
